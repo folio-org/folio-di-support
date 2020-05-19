@@ -1,17 +1,17 @@
 package org.folio.spring;
 
+import static org.springframework.beans.factory.support.BeanDefinitionBuilder.genericBeanDefinition;
+
 import java.lang.reflect.Field;
 import java.util.Objects;
-
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.support.BeanDefinitionBuilder;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Context;
 import io.vertx.core.Vertx;
 import io.vertx.core.impl.VertxImpl;
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 /**
  * Utility class for creating Spring context in io.vertx.core.Context
@@ -38,7 +38,7 @@ public class SpringContextUtil {
    * Spring configuration class is specified using key "spring.configuration" context.config()
    * if context.config() doesn't have this key then defaultConfiguration is used
    */
-  public static void init(Vertx vertx, Context context, Class defaultConfiguration) {
+  public static void init(Vertx vertx, Context context, Class<?> defaultConfiguration) {
     String configClassName = context.config().getString(SPRING_CONFIGURATION);
     if (configClassName != null) {
       try {
@@ -66,7 +66,7 @@ public class SpringContextUtil {
   /**
    * Injects beans from Spring context associated with io.vertx.core.Context into target object
    */
-  public static void autowireDependencies(Object target, Context vertxContext){
+  public static void autowireDependencies(Object target, Context vertxContext) {
     AbstractApplicationContext springContext = vertxContext.get(SPRING_CONTEXT_KEY);
     springContext.getAutowireCapableBeanFactory()
       .autowireBean(target);
@@ -83,9 +83,9 @@ public class SpringContextUtil {
 
   private static AnnotationConfigApplicationContext createBaseContext(Vertx vertx, Context context) {
     AnnotationConfigApplicationContext springContext = new AnnotationConfigApplicationContext();
-    springContext.registerBeanDefinition("context", BeanDefinitionBuilder.genericBeanDefinition(ObjectReferenceFactoryBean.class)
+    springContext.registerBeanDefinition("context", genericBeanDefinition(ObjectReferenceFactoryBean.class)
       .addConstructorArgValue(context).getBeanDefinition());
-    springContext.registerBeanDefinition("vertx", BeanDefinitionBuilder.genericBeanDefinition(ObjectReferenceFactoryBean.class)
+    springContext.registerBeanDefinition("vertx", genericBeanDefinition(ObjectReferenceFactoryBean.class)
       .addConstructorArgValue(vertx).getBeanDefinition());
     return springContext;
   }
@@ -105,11 +105,13 @@ public class SpringContextUtil {
       })
       .filter(Objects::nonNull)
       .findFirst()
-      .get();
+      .orElseThrow(() -> new IllegalStateException("Spring context was not created"));
   }
 
   private static class ObjectReferenceFactoryBean<T> implements FactoryBean<T> {
-    private T object;
+
+    private final T object;
+
     public ObjectReferenceFactoryBean(T object) {
       this.object = object;
     }
