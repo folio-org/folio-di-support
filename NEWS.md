@@ -1,3 +1,6 @@
+## 1.2.0 2020-10-05
+ * FDIS-4 - Migrate to JDK 11
+
 ## 1.1.0 2020-06-07
  * FDIS-1 - Update Vert.x v3.9.0 and Spring v5.2.6.RELEASE
 
