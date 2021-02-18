@@ -1,3 +1,6 @@
+## 1.3.0 2021-02-18
+ * FDIS-6 - Upgrade to Vert.x v4.0.2
+
 ## 1.2.0 2020-10-05
  * FDIS-4 - Migrate to JDK 11
 
