@@ -1,5 +1,8 @@
+## 1.4.1 2021-09-30
+ * FDIS-9 - Upgrade to Vert.x v4.1.4
+
 ## 1.4.0 2021-06-09
-* FDIS-7 - Upgrade to Vert.x v4.1.0.CR1
+ * FDIS-7 - Upgrade to Vert.x v4.1.0.CR1
 
 ## 1.3.0 2021-02-18
  * FDIS-6 - Upgrade to Vert.x v4.0.2
