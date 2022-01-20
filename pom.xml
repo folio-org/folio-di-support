@@ -19,9 +19,9 @@
   </licenses>
 
   <properties>
-    <vertx.version>4.1.4</vertx.version>
-    <spring.version>5.3.14</spring.version>
-    <junit.version>4.13.1</junit.version>
+    <vertx.version>4.2.4</vertx.version>
+    <spring.version>5.3.15</spring.version>
+    <junit.version>4.13.2</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
