@@ -1,3 +1,6 @@
+## 1.7.0 IN_PROGRESS
+* FDIS-22 - Update Vert.x to v4.3.4 and Spring to v5.3.23
+
 ## 1.6.0 2022-06-14
 * FDIS-19 - Update Vert.x to v4.3.1 and Spring to v5.3.20
 
