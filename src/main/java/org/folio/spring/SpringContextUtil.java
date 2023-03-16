@@ -24,8 +24,7 @@ public class SpringContextUtil {
   private static final String SPRING_CONTEXT_KEY = "springContext";
   private static final String DEFAULT_CONFIGURATION_PACKAGE = "org.folio.spring.config";
 
-  private SpringContextUtil() {
-  }
+  private SpringContextUtil() {}
 
   /**
    * Creates and adds Spring context into passed io.vertx.core.Context,
@@ -54,7 +53,7 @@ public class SpringContextUtil {
         springContext.refresh();
         context.put(SPRING_CONTEXT_KEY, springContext);
       } catch (ClassNotFoundException e) {
-        log.warn("Failed to load configuration class, msg: " + e.getMessage());
+        log.warn("Failed to load configuration class, msg: {}", e.getMessage());
         throw new IllegalStateException();
       }
     } else if (defaultConfiguration != null) {
@@ -64,7 +63,7 @@ public class SpringContextUtil {
       springContext.refresh();
       context.put(SPRING_CONTEXT_KEY, springContext);
     } else {
-      log.info("init:: Attempts to create spring context by default config package.");
+      log.info("init:: configClassName & defaultConfiguration == null");
       AnnotationConfigApplicationContext springContext = createBaseContext(vertx, context);
       springContext.scan(DEFAULT_CONFIGURATION_PACKAGE);
       springContext.refresh();
