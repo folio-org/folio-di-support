@@ -1,3 +1,7 @@
+## 1.8.0 2023-03-22
+* FDIS-27 - Update Vert.x to v4.4.0 and Spring to v6.0.6 and maven-compiler-plugin to 17 
+* FDIS-16 - Log improvements
+
 ## 1.7.0 2022-10-18
 * FDIS-22 - Update Vert.x to v4.3.4 and Spring to v5.3.23
 
