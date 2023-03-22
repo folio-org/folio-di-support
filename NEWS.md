@@ -1,6 +1,12 @@
-## 1.8.0 2023-03-22
-* FDIS-27 - Update Vert.x to v4.4.0 and Spring to v6.0.6 and maven-compiler-plugin to 17 
+## 2.0.0 in progress
 * FDIS-16 - Log improvements
+* FDIS-27 - Update the module for Java 17 & the latest dependencies
+
+### Plugins
+* Bump `maven-compiler-plugin` from `11` to `17`
+### Dependencies
+* Bump `vertx` from `4.3.8` to `4.4.0`
+* Bump `springframework` from `5.3.23` to `6.0.6`
 
 ## 1.7.0 2022-10-18
 * FDIS-22 - Update Vert.x to v4.3.4 and Spring to v5.3.23
