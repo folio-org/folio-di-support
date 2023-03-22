@@ -2,11 +2,11 @@
 ### Breaking changes
 * Update the module for Java 17 & the latest dependencies ([FDIS-27](https://issues.folio.org/browse/FDIS-27)) 
 
-### Features
+### Tech Dept
 * Log improvements ([FDIS-16](https://issues.folio.org/browse/FDIS-16))
 
 ### Dependencies
-* Bump `maven-compiler-plugin` from `11` to `17`
+* Bump `java` from `11` to `17`
 * Bump `springframework` from `5.3.23` to `6.0.6`
 * Bump `vertx` from `4.3.8` to `4.4.0`
 
