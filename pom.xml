@@ -3,7 +3,7 @@
 
   <groupId>org.folio</groupId>
   <artifactId>folio-di-support</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>folio-di-support</name>
   <organization>
@@ -91,7 +91,7 @@
     <url>https://github.com/folio-org/folio-di-support</url>
     <connection>scm:git:git@github.com:folio-org/folio-di-support.git</connection>
     <developerConnection>scm:git:git@github.com:folio-org/folio-di-support.git</developerConnection>
-    <tag>v2.0.0</tag>
+    <tag>release/v2.0</tag>
   </scm>
 
   <build>
