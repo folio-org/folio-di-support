@@ -1,3 +1,7 @@
+## 2.0.1 2023-10-04
+### Bug fixes
+* Disable creating reduced pom by shade plugin
+
 ## 2.0.0 2023-10-03
 ### Breaking changes
 * Update the module for Java 17 & the latest dependencies ([FDIS-27](https://issues.folio.org/browse/FDIS-27)) 
