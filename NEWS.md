@@ -1,4 +1,8 @@
-## 2.1.0 In Progress
+## 2.1.0 2024-15-03
+### Dependencies
+* Bump `springframework` from `6.0.12` to `6.1.5`
+* Bump `vertx` from `4.4.5` to `4.5.5`
+* Bump `log4j` from `2.20.0` to `2.23.1`
 
 ## 2.0.0 2023-10-03
 ### Breaking changes
