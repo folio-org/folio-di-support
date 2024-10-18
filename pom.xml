@@ -20,7 +20,7 @@
 
   <properties>
     <vertx.version>4.5.5</vertx.version>
-    <spring.version>6.1.5</spring.version>
+    <spring.version>6.1.14</spring.version>
     <lombok.version>1.18.30</lombok.version>
     <log4j.version>2.23.1</log4j.version>
 
