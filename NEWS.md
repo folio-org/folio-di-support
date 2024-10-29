@@ -1,3 +1,10 @@
+## 2.2.0 2024-29-11
+### Dependencies
+* Bump `springframework` from `6.1.5` to `6.1.14`
+* Bump `vertx` from `4.5.5` to `4.5.10`
+* Bump `lombok` from `1.18.30` to `1.18.34`
+* Bump `log4j` from `2.23.1` to `2.24.1`
+
 ## 2.1.0 2024-15-03
 ### Dependencies
 * Bump `springframework` from `6.0.12` to `6.1.5`
