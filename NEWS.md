@@ -1,3 +1,7 @@
+## 3.0.0 In Progress
+### Breaking changes
+* Upgrade the module for Java 21 & the latest dependencies ([FDIS-33](https://issues.folio.org/browse/FDIS-33))
+
 ## 2.2.0 2024-29-11
 ### Dependencies
 * Bump `springframework` from `6.1.5` to `6.1.14`
