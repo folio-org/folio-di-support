@@ -1,3 +1,7 @@
+## 3.1.0 In progress
+
+---
+
 ## 3.0.0 2025-02-28
 ### Breaking changes
 * Upgrade the module for Java 21 & the latest dependencies ([FDIS-33](https://issues.folio.org/browse/FDIS-33))
@@ -7,6 +11,8 @@
 * Bump `vertx` from `4.5.10` to `4.5.13`
 * Bump `lombok` from `1.18.34` to `1.18.36`
 * Bump `log4j` from `2.24.1` to `2.24.3`
+
+---
 
 ## 2.2.0 2024-29-11
 ### Dependencies
