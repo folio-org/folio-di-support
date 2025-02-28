@@ -1,6 +1,6 @@
 # folio-di-support
 
-Copyright (C) 2018-2022 The Open Library Foundation
+Copyright (C) 2018-2025 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -36,7 +36,7 @@ public class InitAPIImpl implements InitAPI {
 }
 ```
 ### Accessing Spring context from endpoint classes
-SpringContextUtil#autowireDependencies method gets Spring context from Vertx context and uses it to inject beans into target object. 
+SpringContextUtil#autowireDependencies method gets Spring context from Vertx context and uses it to inject beans into target object.
 Example of injecting Spring beans into API object:
 ```
 public class EholdingsProxyTypesImpl implements EholdingsProxyTypes {
@@ -56,7 +56,7 @@ public class EholdingsProxyTypesImpl implements EholdingsProxyTypes {
 ```
 
 ### Declaring Spring configuration
-SpringContextUtil#init uses Spring configuration class. 
+SpringContextUtil#init uses Spring configuration class.
 
 Detailed documentation on how to declare Spring configuration can be found here:
 https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-java.
@@ -103,6 +103,6 @@ public class RMAPIConfigurationCache {
 vertx and expirationTime parameters will be automatically injected by Spring, expirationTime will be set to the value of  "configuration.cache.expire" property from application.properties file.
 
 ## Additional information
-Example of module that uses dependency injection support: 
+Example of module that uses dependency injection support:
 https://github.com/folio-org/mod-kb-ebsco-java
 * Other FOLIO Developer documentation is at [dev.folio.org](https://dev.folio.org/)
