@@ -1,4 +1,9 @@
-## 3.1.0 In progress
+## 4.0.0 In progress
+### Breaking changes
+* Upgrade the module for Vert.X 5.0.x ([FDIS-38](https://issues.folio.org/browse/FDIS-38))
+
+### Dependencies
+* Bump `vertx` from `4.5.13` to `5.0.5`
 
 ---
 
