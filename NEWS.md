@@ -2,6 +2,9 @@
 ### Breaking changes
 * Upgrade the module for Vert.X 5.0.x ([FDIS-38](https://issues.folio.org/browse/FDIS-38))
 
+### Tech Dept
+* Use GitHub workflow for CI/CD ([FDIS-39](https://issues.folio.org/browse/FDIS-39))
+
 ### Dependencies
 * Bump `vertx` from `4.5.13` to `5.0.5`
 
