@@ -6,7 +6,10 @@
 * Use GitHub workflow for CI/CD ([FDIS-39](https://issues.folio.org/browse/FDIS-39))
 
 ### Dependencies
-* Bump `vertx` from `4.5.13` to `5.0.5`
+* Bump `springframework` from `6.2.3` to `7.0.6`
+* Bump `vertx` from `4.5.13` to `5.0.10`
+* Bump `lombok` from `1.18.36` to `1.18.44`
+* Bump `log4j` from `2.24.3` to `2.25.4`
 
 ---
 
