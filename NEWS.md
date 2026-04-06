@@ -1,4 +1,4 @@
-## 4.0.0 In progress
+## 4.0.0 2026-04-06
 ### Breaking changes
 * Upgrade the module for Vert.X 5.0.x ([FDIS-38](https://issues.folio.org/browse/FDIS-38))
 
