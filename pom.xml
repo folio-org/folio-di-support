@@ -19,8 +19,8 @@
   </licenses>
 
   <properties>
-    <vertx.version>5.2.1</vertx.version>
-    <spring.version>7.0.9</spring.version>
+    <vertx.version>5.2.2</vertx.version>
+    <spring.version>7.0.10</spring.version>
     <lombok.version>1.18.48</lombok.version>
     <log4j.version>2.26.1</log4j.version>
 
